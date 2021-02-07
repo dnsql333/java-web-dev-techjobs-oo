@@ -1,21 +1,13 @@
 package Test;
 import org.junit.Before;
 import org.junit.Test;
-
 import org.launchcode.techjobs_oo.*;
-
 import static org.junit.Assert.*;
-
-
-//import org.junit.Test;
-//import org.junit.Before;
-//import static org.junit.Assert.assertEquals;
-
 
 public class JobTest {
     Job test1;
     Job test2;
-    Job testAll;
+//    Job testAll;
 
     @Before
     public void testSettingJobId() {
@@ -24,20 +16,30 @@ public class JobTest {
     }
 
     @Test
-    public void testCatDogJobs(){
+    public void testCatDogId(){
         assertTrue(test1.getId() == 1);
         assertTrue(test2.getId() == 2);
     }
+//
+//    @Before
+//    public void testSettingJobConstructorSetsAllFields(){
+//        testAll = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+//    }
+//
+//    @Test
+//    public void JobSetsNameValue() {
+//        assertEquals("Product tester", testAll.getName());
+//    }
+//
+//    @Test
+//    public void JobSetsEmployerValue() {
+//        Employer expected = testAll.getEmployer();
+//        assertEquals("ACME", expected.getValue());
+//    }
+////    @Test
+////    public void JobSetsLocationValue() {
+////        Location expected = testAll.getLocation();
+////        assertEquals("Desert", expected.getValue());
+//    }
 
-    @Before
-    public void testSettingJobConstructorSetsAllFields(){
-        testAll = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
     }
-
-    @Test
-    public void testJobConstructorSetsAllFields(){
-        assertEquals("Product tester", testAll.getName());
-       
-    }
-
-}
