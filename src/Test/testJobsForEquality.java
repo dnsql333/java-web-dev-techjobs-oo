@@ -17,7 +17,12 @@ public class testJobsForEquality {
     }
 
     @Test
-    public void TwoDifferentIds(){
-        assertFalse(object1 == object2);
+    public void TwoDifferentIds() {
+        assertFalse(object1.equals(object2));
     }
+//    public void TwoDifferentIds(){
+//        assertFalse(object1 == object2);
+//    }
+
+
 }
