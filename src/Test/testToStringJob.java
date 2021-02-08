@@ -20,7 +20,7 @@ public class testToStringJob {
     @Test
     public void returnsToString() {
         String compareStringObject =
-                "ID: " + "1" + '\n' +
+                "ID: " + toStringObject.getId() + '\n' +
                         "Name: " + "_____" + '\n' +
                         "Employer: " + "_____" + '\n' +
                         "Location: " + "_____" + '\n' +
