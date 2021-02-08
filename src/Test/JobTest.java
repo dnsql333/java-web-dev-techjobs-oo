@@ -7,7 +7,6 @@ import static org.junit.Assert.*;
 public class JobTest {
     Job test1;
     Job test2;
-//    Job testAll;
 
     @Before
     public void testSettingJobId() {

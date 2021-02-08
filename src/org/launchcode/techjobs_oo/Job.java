@@ -43,7 +43,6 @@ public class Job {
     }
 
 
-
     @Override
     public int hashCode() {
         return Objects.hash(id, name, employer, location, positionType, coreCompetency);
@@ -54,28 +53,58 @@ public class Job {
     //  and id.
 
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public String getName() {
+        return name;
+    }
 
-    public Employer getEmployer() { return employer; }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Employer getEmployer() {
+        return employer;
+    }
+
     public void setEmployer(Employer employer) {
         this.employer = employer;
     }
 
-    public Location getLocation() { return location; }
+    public Location getLocation() {
+        return location;
+    }
+
     public void setLocation(Location location) {
         this.location = location;
     }
 
-    public PositionType getPositionType() { return positionType; }
+    public PositionType getPositionType() {
+        return positionType;
+    }
+
     public void setPositionType(PositionType positionType) {
         this.positionType = positionType;
     }
 
-    public CoreCompetency getCoreCompetency() { return coreCompetency; }
+    public CoreCompetency getCoreCompetency() {
+        return coreCompetency;
+    }
+
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
     }
 
-    public int getId() { return id; }
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + '\n' +
+                "Name: " + name + '\n' +
+                "Employer: " + employer + '\n' +
+                "Location: " + location + '\n' +
+                "Position Type: " + positionType + '\n' +
+                "Core Competency: " + coreCompetency + '\n';
+
+    }
 }
