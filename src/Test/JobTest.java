@@ -19,26 +19,5 @@ public class JobTest {
         assertTrue(test1.getId() == 1);
         assertTrue(test2.getId() == 2);
     }
-//
-//    @Before
-//    public void testSettingJobConstructorSetsAllFields(){
-//        testAll = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-//    }
-//
-//    @Test
-//    public void JobSetsNameValue() {
-//        assertEquals("Product tester", testAll.getName());
-//    }
-//
-//    @Test
-//    public void JobSetsEmployerValue() {
-//        Employer expected = testAll.getEmployer();
-//        assertEquals("ACME", expected.getValue());
-//    }
-////    @Test
-////    public void JobSetsLocationValue() {
-////        Location expected = testAll.getLocation();
-////        assertEquals("Desert", expected.getValue());
-//    }
 
-    }
+}
